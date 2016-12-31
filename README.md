@@ -17,4 +17,3 @@ For this project, I create a simple app to display stock price.
 ## App creation and deployment  
 - Using `Flask`, a dynamic website is created.
 - The app is then deployed to Heroku
-

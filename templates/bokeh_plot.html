@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>Simple stock app</title>
+
+	<link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.12.3.min.css" type="text/css" />
+	<script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.3.min.js"></script>
+        
+    <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.3.min.css" type="text/css">
+
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-0.12.3.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-0.12.3.min.js"></script>
+</head>
+
+
+<form id='returnToFrontpage' method='get' action='plot_inter'>
+	<p>
+		Want to see more interactive plots (where you could select company)? Please go to:
+		<input type='submit' value='more interactive plot' />
+		This may take a few seconds :)
+	</p>
+</form>
+
+<form id='returnToFrontpage' method='post' action='plot'>
+	<p>
+		Want to check other companies? Please return to the main page:
+		<input type='submit' value='Return' />
+	</p>
+</form>
+
+
+<body>
+	{{ div | safe }}
+	{{ script | safe }}
+</body>
+

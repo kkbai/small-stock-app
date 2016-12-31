@@ -1,0 +1,21 @@
+<!doctype html>
+	<title>Simple stock app</title>
+	<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+	<div class=page>
+		<h1>Oops...</h1>
+
+		<div class=metanav>
+			<h3>
+				Did you forget to enter your input?
+			</h3>
+			<h3>
+				If not, then the stock ticker does not exist in the database.
+			</h3>
+
+			<form id='inputinfo' method='post' action='plot'>
+				<p>
+					<input type='submit' value='Return' /> <!--the 'value' is the word that will appear on your button.-->
+				</p>
+			</form>
+		</div>
+	</div>
